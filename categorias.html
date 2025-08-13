@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: yellow;
+  color:  #568203;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nome{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  color: white;
+  
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color:  #568203;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+ transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 119, 28);
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #568203;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nome">TopChef</div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Receitas</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Chefes</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2> Qual a sua proxima refeição</h2>
+</body>
+</html>
