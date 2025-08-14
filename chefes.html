@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefes</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: yellow;
+  color:  #568203;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nome{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  color: white;
+  
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color:  #568203;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+ transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 119, 28);
+}
+
+h2 {
+  margin-left: 60px;
+  margin-top: 20px;
+  color: #568203;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.chef {
+    text-align: center;
+}
+
+.chef img.foto {
+width: 170px;
+height: 170px;
+object-fit: cover;
+border-radius: 50%;
+border: 3px solid white;
+
+
+}
+
+.chef p {
+    font-size: 25px;
+    padding: 20px 8px;
+    text-align: center;
+    margin-top: -10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #568203;
+}
+
+.chef img.bandeira {
+    width: 60px;
+    height: 47px;
+    position: relative;
+    top: -100px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nome" onclick="location.href= 'pagina inicial.html'">TopChef</div>
+        <nav>
+          <ul>
+            
+            <li><a href="receitas.html">Receitas</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="#">Chefes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h2> Chefes</h2>
+      <div class="container">
+        <div  class="chef">
+            <img class="foto" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEyxH-Ly1kKQC-0_sywbJLdivUD6y-y5YaxzzQ65PTMQDBlVndq0kKy23X0JQOFgIVfSyc33Xw9MJy6_-CXYkeZdiSPLY-4GEEdQj5UQ" alt="Massimo Bottura">
+        <a href="https://pt.m.wikipedia.org/wiki/Massimo_Bottura">
+            <img class="bandeira" src="https://static.todamateria.com.br/upload/ba/nd/bandeira-da-italia-og.jpg" alt="italia">
+        </a>
+            <p>Massimo Bottura</p>
+        </div>
+
+        <div class="chef">
+            <img class="foto" src="https://mesasp.com.br/wp-content/uploads/2024/10/Erick-Jacquin.png" alt="Érick Jacquin">
+            <a href="https://pt.m.wikipedia.org/wiki/%C3%89rick_Jacquin">
+                <img class="bandeira" src="https://static.todamateria.com.br/upload/fr/an/frana_a.jpg" alt="frança">
+            </a>
+            <p>Érick Jacquin</p>
+        </div>
+        <div class="chef">
+        <img class="foto" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXn56fj0A0OFQvHO5e_Z2PItU64Q5Jno7On-Kexc-MxNK6LOffo_0xTr4eaM1iM-swDdKYcPi3sOqcBa7n5CM_VQ" alt="Joachim Wissler">
+        <a href="https://www.althoffcollection.com/en/althoff-grandhotel-schloss-bensberg/restaurant-vendome/joachim-wissler">
+            <img class="bandeira" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="alemanha">
+        </a>
+        <p> Joachim Wissler</p>
+       </div>
+    
+       <div class="chef">
+        <img class="foto" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/18/13/tselementes.jpg" alt="Nicolau Tselementes">
+        <a href="https://pt.m.wikipedia.org/wiki/Nicolau_Tselementes">
+            <img class="bandeira" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/1200px-Flag_of_Greece.svg.png" alt="grecia">
+        </a>
+        <p> Nicolau Tselementes</p>
+       </div>
+
+       <div class="chef">
+        <img class="foto" src="https://domrestaurante.com.br/wp-content/uploads/2025/02/alex-atalla-dom-restaurante-e1739925279110.png" alt="Alex Atala">
+        <a href="https://pt.m.wikipedia.org/wiki/Alex_Atala">
+            <img class="bandeira" src="https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg" alt="brasil">
+        </a>
+        <p> Alex Atala</p>
+       </div>
+
+       <div class="chef">
+        <img class="foto" src="https://brasaperuvian.com/cdn/shop/articles/Chef_Nobu_1_1600x.png?v=1655128074" alt="Nobu Matsuhisa">
+        <a href="https://panoramamercantil.com.br/o-imperio-gastronomico-de-nobu-matsuhisa/#:~:text=Nobu%20Matsuhisa%20%C3%A9%20um%20famoso,outras%207%20cadeias%20de%20restaurantes.">
+            <img class="bandeira" src="https://static.significados.com.br/foto/bandeira-do-japao-fb.jpg" alt="japao">
+        </a>
+        <p> Nobu Matsuhisa</p>
+       </div>
+
+      </div>
+</body>
+</html>
