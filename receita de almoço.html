@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="port-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>receita de almoço</title>
+    <style>
+        
+         * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: yellow;
+  color:  #568203;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nome{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  color: white;
+  
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color:  #568203;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+ transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 119, 28);
+}
+
+h1 {
+  margin-left: 60px;
+  margin-top: 20px;
+  color: #568203;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+ display: flex;
+ align-items: flex-start;
+ gap: 80px;
+ margin-top: 20px;
+ margin-left: 50px;
+}
+
+.retangulo{
+   width: 570px;
+   height: 495px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 10px;
+   margin-left: -40px;
+   
+    
+   }
+
+   .retangulo3 {
+    width: 320px;
+   height: 100px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 10px;
+   margin-left: 40px;
+   margin-top: 20px;
+   }
+
+   .retangulo4 {
+   width: 320px;
+   height: 100px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 10px;
+   margin-left: 450px;
+   margin-top: -100px;
+
+   }
+
+   .modo-preparo {
+    margin-top: 20px;
+    
+   }
+
+h2 {
+    color: #568203;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 40px;
+
+}
+
+h4 {
+   margin-top: 20px;
+  margin: 35px 0;
+  line-height: 1.0;
+}
+
+#tempo {
+  display: inline-block;
+  background: #e4ffb3;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+#tempo2 {
+  display: inline-block;
+  background: #e4ffb3;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+#Ingredientes {
+  color:#568203;
+}
+
+.preparo img {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo1 {
+   width: 470px;
+   height: 400px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -405px;
+}
+
+.preparo1 {
+  background-color: #e4ffb3;
+  padding: 15px;
+  margin: 50px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+}
+
+.preparo img2 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo2 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo2 {
+  padding: 15px;
+  margin: 50px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+.preparo img3 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo33 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo3 {
+  padding: 15px;
+  margin: 30px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+
+.preparo img4 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo44 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo4 {
+  padding: 15px;
+  margin: 100px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+.preparo img5 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo5 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo5 {
+  padding: 15px;
+  margin: 100px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+.preparo img6 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo6 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo6 {
+  padding: 15px;
+  margin: 100px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+.preparo img7 {
+   margin-top: 30px;
+  margin-left: 40px;
+}
+
+.retangulo7 {
+   width: 470px;
+   height: 380px;
+   background-color: #e4ffb3;
+   padding: 10px;
+   border-radius: 0px;
+   margin-left: 530px;
+   margin-top: -385px;
+}
+
+.preparo7 {
+  padding: 15px;
+  margin: 100px 0;
+  line-height: 1.6;
+  color: black;
+  font-size: 23px;
+  
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nome" onclick="location.href= 'pagina inicial.html'">TopChef</div>
+        <nav>
+          <ul>
+            
+            <li><a href="receitas.html">Receitas</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="chefes.html">Chefes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1>strogonoff de frango simples</h1>
+      <div class="container">
+      <img src="https://www.casaredo.com/blog/wp-content/uploads/2024/02/strogonoff-de-frango-facil-.jpg" alt="frango" height="500px" width="660px">
+      <div class="retangulo">
+         <h3 id="Ingredientes"> Ingredientes</h3>
+            <h4>500 gramas de filé de peito de frango cortado em cubos ou tirinhas</h4>
+            <h4>1 colher de sopa de manteiga</h4>
+            <h4>1/2 cebola picada ou ralada</h4>
+            <h4>Pimenta-do-reino a gosto</h4>
+            <h4>Sal a gosto</h4>
+            <h4>1/2 xícara de chá de água</h4>
+            <h4>1 caixinha de creme de leite (200 gramas)</h4>
+            <h4>6 colheres de sopa de ketchup</h4>
+        </div>
+      </div>
+      <div class="mode-preparo">
+        <h2> Modo de preparo</h2>
+        
+      </div>
+
+      <div class="retangulo3">
+        <h3 id="tempo"> 🕦 5min</h3>
+         <span>tempo de preparo</span> 
+      </div>
+        <div class="retangulo4">
+        <h3 id="tempo2">🕦 10min </h3>
+        <span>tempo de fogo</span> 
+         </div>
+         
+         <div class="preparo img">
+         <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-01-730x548.jpeg" alt="preparo1" height="400px" width="490px">
+        <div class="retangulo1">
+        <div class="preparo1">
+        <p> Corte o frango em tiras de 0,5 cm de espessura. Deixe a cebola bem fininha.
+             Pode substituir a manteiga por margarina ou óleo vegetal. 
+            Reúna os demais ingredientes para começar o preparo;</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="preparo img2">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-02-730x548.jpeg" alt="preparo2" height="380px" width="490px">
+          <div class="retangulo2">
+            <div class="preparo2">
+              <p>Em uma panela grande, coloque a manteiga e espere derreter. 
+                Refogue a cebola por cerca de 2 minutos, ou até ficar douradinha;</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="preparo img3">
+    <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-03-730x548.jpeg" alt="preparo3" height="380px" width="490px">
+     <div class="retangulo33">
+     <div class="preparo3">
+     <p>Acrescente o frango, o sal e a pimenta-do-reino. Misture bem e espere dourar. O frango não pode cozinhar, apenas dourar.
+         Se você colocar muitos cubinhos de uma vez, vai soltar água e cozinhar.
+          Se preciso, divida o processo em 2 etapas;</p>
+     </div>
+    </div>
+     </div> 
+
+    <div class="preparo img4">
+    <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-04-730x548.jpeg" alt="preparo4" height="380px" width="490px">
+     <div class="retangulo44">
+     <div class="preparo4">
+     <p>Assim que o frango estiver douradinho, coloque a água e espere ferver;</p>
+     </div>
+    </div>
+     </div> 
+        
+     <div class="preparo img5">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-05-730x548.jpeg" alt="preparo5" height="380px" width="490px">
+         <div class="retangulo5">
+             <div class="preparo5">
+                 <p>Quando boa parte da água evaporar, adicione o creme de leite e o ketchup. Misture bem e deixe cozinhar por 2 minutos;</p>           
+                 </div>
+                 </div>
+                 </div>
+        
+                 <div class="preparo im6">
+         <img src="https://www.receiteria.com.br/wp-content/uploads/strogonoff-de-frango-simples-06-730x548.jpeg" alt="preparo6" height="400px" width="490px">
+        <div class="retangulo6">
+        <div class="preparo6">
+        <p> Se necessário, corrija o sal e a pimenta-do-reino. Desligue o fogo para não talhar o creme de leite;</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="preparo img7">
+          <img src="https://www.casaredo.com/blog/wp-content/uploads/2024/02/strogonoff-de-frango-facil-.jpg" alt="preparo7" height="380px" width="490px">
+          <div class="retangulo7">
+            <div class="preparo7">
+              <p>Sirva com arroz branco e batata palha.</p>
+            </div>
+          </div>
+        </div>
+
+
+       
+    </div>
+    </body>
+</html>
