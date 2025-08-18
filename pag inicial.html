@@ -56,13 +56,42 @@ nav ul li a:hover {
 }
 .container {
     position: relative;
-    display: inline-block;
+    text-align: center;
+    color: white;
+   
 } 
+
+
+
+.barra-pesquisa {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.barra-pesquisa input  {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.barra-pesquisa button {
+  padding: 10px 15px;
+  border: none;
+  background-color:#568203;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
 .texto {
     position: absolute;
-    bottom: 10px;
+    top: 40%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: white;
     padding: 250px 50px;
     border-radius: 5px;
@@ -80,7 +109,7 @@ nav ul li a:hover {
       <ul>
         <li><a href="receitas.html">Receitas</a></li>
         <li><a href="categorias.html">Categorias</a></li>
-        <li><a href="#">Chefes</a></li>
+        <li><a href="chefes.html">Chefes</a></li>
       </ul>
     </nav>
   </header>
@@ -88,6 +117,10 @@ nav ul li a:hover {
     <div class="img">
    <img src="https://brasiliainfoco.com/wp-content/uploads/2024/09/culinaria-brasileira_1725160847951.jpg" alt="imagem" height="710px" width="1600px">
    <p class="texto"> O melhor da culinaria esta aqui</p>
+   <div class="barra-pesquisa">
+    <input type="text" placeholder="Procure sua proxima refeição...">
+    <button>buscar</button>
+   </div>
 </div>
    
    
